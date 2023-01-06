@@ -7,7 +7,7 @@ function Home(){
     return(
         <div>
             <h>
-                Home
+                Homeies
             </h>
 
             <button>
