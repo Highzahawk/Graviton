@@ -5,6 +5,7 @@ export default function Navbar(){
     return <nav className="nav">
         <Link to="/" className="site-title">Graviton</Link>
         <ul>
+            <CustomLink to="/Home">Home</CustomLink>
             <CustomLink to="/Dashboard">Dashboard</CustomLink>
             <CustomLink to="/FileManager">FileManager</CustomLink>
             <CustomLink to="/Practice">Practice</CustomLink>

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {Button, Space, Icon} from 'antd';
 import SignIn from './Components/Auth/SignIn';
 import Home from './Pages/Home';
 import FileManager from './Pages/FileManager';
