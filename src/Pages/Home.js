@@ -1,23 +1,38 @@
 import react from 'react';
 import { useNavigate } from 'react-router-dom';
-import {Button, Col, Layout, Row, Space} from 'antd';
+import {Button, Card, Space, Col, Row} from 'antd';
 import {SearchOutlined, VerticalAlignBottomOutlined} from '@ant-design/icons';
+import styles from "./buttonStyles.css";
+
 
 
 function Home(){
     const navigate = useNavigate(); 
     return(
-        <Space size = {1000}>
+        <Row gutter={[16, 40]}>
+            <Col span = {8}>
+                <Button type = "primary" className = "NewClass" shape = "round" size = "large">
+                    Add New Class
+                </Button>
+            </Col>
 
-            <Button type = "primary" class = "NewClass" shape = "round" size = "large" style={{ background: "#412973", borderColor: "black"}}>
-                Add new class
+            <Col span = {8} offset = {8}>
+                <Button type="primary" className = "Search" shape = "round" size = "large" >
+                    <SearchOutlined />
+                    Search
+                </Button>
+            </Col>
+
+            <Col span = {8}> 
+                <Button type = "default" className = "Classes" size = "large">
+                Calculus AB
             </Button>
+            </Col>                 
 
-            <Button type="primary" class = "Search" shape = "round" size = "large" icon={<SearchOutlined />} style={{ background: "#412973", borderColor: "black"}}>
-                Search
-            </Button>
+        </Row>
 
-        </Space>
+
+        
      
     );
 }

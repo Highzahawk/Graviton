@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Button, Space, Icon} from 'antd';
+import {Button, Space, Icon, ConfigProvider} from 'antd';
 import SignIn from './Components/Auth/SignIn';
 import Home from './Pages/Home';
 import FileManager from './Pages/FileManager';
@@ -8,6 +8,8 @@ import Practice from './Pages/Practice';
 import Dashboard from './Pages/Dashboard';
 import {Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar';
+import React from 'react';
+
 
 function App() {
   return(
