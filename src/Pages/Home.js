@@ -5,7 +5,6 @@ import {SearchOutlined, VerticalAlignBottomOutlined} from '@ant-design/icons';
 import styles from "./buttonStyles.css";
 
 
-
 function Home(){
     const navigate = useNavigate(); 
     return(
@@ -28,7 +27,6 @@ function Home(){
                 Calculus AB
             </Button>
             </Col>                 
-
         </Row>
 
 

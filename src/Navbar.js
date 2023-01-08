@@ -1,27 +1,44 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { Link, useMatch, useResolvedPath, useLocation, NavLink } from "react-router-dom"
+import { Menu, Layout } from 'antd';
+import {
+  HomeFilled,
+  FileFilled,
+  FundFilled,
+  EditFilled
+} from '@ant-design/icons';
+import './navbar.css';
+import React, { useState } from 'react'
 
-
-export default function Navbar(){
-    return <nav className="nav">
-        <Link to="/" className="site-title">Graviton</Link>
-        <ul>
-            <CustomLink to="/Home">Home</CustomLink>
-            <CustomLink to="/Dashboard">Dashboard</CustomLink>
-            <CustomLink to="/FileManager">FileManager</CustomLink>
-            <CustomLink to="/Practice">Practice</CustomLink>
-        </ul>
-    </nav>
-}
-
-function CustomLink({to, children, ...props}){
-    const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path: resolvedPath.pathname, end: true})
-
-    return(
-        <li className={isActive ? "active" : ""}>
-            <Link to={to} {...props}>
-                {children}
-            </Link>
-        </li>
-    )
-}
+export default function Navbar() {
+    const location = useLocation();
+    return (
+      <Layout>
+        <Layout.Header className = "navbar" style={{ backgroundColor: '#ffffff' }}>
+          <Menu className = "navbar"  style={{ display: 'flex', justifyContent: 'center' }} mode="horizontal" selectedKeys={[location.pathname]}>
+            <Menu.Item key="/" className="nav-item" >
+              <Link  to="/"> 
+                <HomeFilled style={{ fontSize: '30px' }} />
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="/pages/FileManager" className="nav-item" >
+              <Link to="/pages/FileManager">
+                <FileFilled className="icon" style={{ fontSize: '30px' }} />
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="/pages/practice" className="nav-item" >
+              <Link to="/pages/practice">
+                <EditFilled style={{ fontSize: '30px' }} /> 
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="/pages/dashboard" className="nav-item" >
+              <Link to="/pages/dashboard">
+                <FundFilled style={{ fontSize: '30px' }} />
+              </Link>
+            </Menu.Item>
+          </Menu>
+        </Layout.Header>
+      </Layout>
+    );
+  }
+  
+  
