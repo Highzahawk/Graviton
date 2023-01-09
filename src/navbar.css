@@ -8,8 +8,6 @@
 }
 
 .navbar{
-    background-color: #ffffff;
-    color: white;
     display: 'flex';
     justify-content: center;
     position: relative;
@@ -20,8 +18,3 @@
     color: #412973;
 }
 
-.avatar-item {
-    position: absolute;
-    left: 470px;
-    color: #412973;
-}

@@ -13,11 +13,12 @@ function FileManager(){
             <button>Filter</button>
             <button>Unit</button>
 
-            {/* <button onClick={() => { navigate("/"); }}>
+            { <button onClick={() => { navigate("/"); }}>
                 Home
-            </button> */}
+            </button> }
         </div>
     );
 }
 
 export default FileManager;
+

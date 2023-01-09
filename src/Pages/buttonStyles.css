@@ -6,13 +6,11 @@
 
   .ant-btn.ant-btn-primary:hover {
     background-color: #412973;
-    box-shadow: 10px 5px #6542b0;
-    border: solid #6542b0;
+    border: solid #a584ec;
 } 
 
 .ant-btn.ant-btn-primary:active {
   background-color: #412973;
-  box-shadow: 10px 5px #6542b0;
   border: solid black;
 } 
 
