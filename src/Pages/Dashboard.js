@@ -24,7 +24,7 @@ import { Column } from '@ant-design/plots';
       yField: 'value',
       point: {
         size: 5,
-        shape: 'diamond | circule',
+        shape: 'diamond | circule', 
       },
       tooltip: {
         formatter: (data) => {
