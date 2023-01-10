@@ -7,7 +7,7 @@ export default function Navbar(){
         <ul>
             <CustomLink to="/Dashboard">Dashboard</CustomLink>
             <CustomLink to="/FileManager">FileManager</CustomLink>
-            <CustomLink to="/Practice">Practice deez</CustomLink>
+            <CustomLink to="/Practice">Practice</CustomLink>
         </ul>
     </nav>
 }
