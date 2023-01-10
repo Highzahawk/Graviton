@@ -1,0 +1,34 @@
+.classDropdown.ant-select {
+    background-color: #412973;
+    border-radius: 20px;
+    width: 150px;
+    color: white;
+}
+
+.classDropdown .ant-select-selection-placeholder {
+    color: white;
+    opacity: 80%;
+  }
+
+  .classDropdown .ant-select-arrow {
+    color: white;
+    opacity: 80%;
+  }
+
+  .unitDropdown.ant-select {
+    background-color: #412973;
+    border-radius: 20px;
+    color: white;
+    width: 150px;
+}
+
+.unitDropdown .ant-select-selection-placeholder {
+    color: white;
+    opacity: 80%; 
+  }
+
+  .unitDropdown .ant-select-arrow {
+    color: white;
+    opacity: 80%;
+  }
+
