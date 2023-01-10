@@ -3,7 +3,7 @@ import react, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Col, Row, Statistic, Button, Card, Layout, Select} from 'antd';
 import styles from "./dashboardStyles.css";
-import { Column, Line } from '@ant-design/plots'; 
+import { Column} from '@ant-design/plots'; 
 import { Content } from 'antd/es/layout/layout';
 
 
@@ -106,6 +106,7 @@ function Dashboard() {
       placeholder = "Select Class"
       placement='topLeft'
       size='large'
+      optionFilterProp='class'
         onChange={onChange}
         options={options}
       />
@@ -115,12 +116,29 @@ function Dashboard() {
       bordered = {false}
       placeholder = "Select Unit"
       size='large'
+      optionFilterProp='class'
         onChange={onChange}
         options={options}
       />
       </Col>
       <div style={{ width: '100%', height: '80vh' }}>
-        <Column {...config} />
+      <Column
+  {...config}
+  xAxis={{
+    label: {
+      style: {
+        fill: 'black',
+      },
+    },
+  }}
+  yAxis={{
+    label: {
+      style: {
+        fill: 'black',
+      },
+    },
+  }}
+/>
         </div>
 
       </Row>

@@ -32,3 +32,8 @@
     opacity: 80%;
   }
 
+  .columnGraph .g2-axis-x-label,
+.columnGraph .g2-axis-y-label {
+  fill: red;
+}
+
