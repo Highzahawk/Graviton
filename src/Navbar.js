@@ -1,5 +1,5 @@
 import { Link, useMatch, useResolvedPath, useLocation, NavLink } from "react-router-dom"
-import { Menu, Layout, Dropdown, Avatar, Badge} from 'antd';
+import { Menu, Layout, Dropdown, Avatar, Badge, Row, Col} from 'antd';
 import {
   HomeFilled,
   FileFilled,
@@ -20,9 +20,10 @@ export default function Navbar() {
 
     return (
       <Layout>
-        <Header style={{ backgroundColor: '#ffffff' }}>
-        <Avatar shape = "circle" icon = {<UserOutlined/>} size = 'large' style = {{float: 'right', backgroundColor: '#412973'}}/>
-          <Menu className = "navbar"
+        <Header style={{backgroundColor: '#EC8C8C'}}>
+        <Avatar shape = "circle" icon = {<UserOutlined/>} size = 'large' style={{float: 'right', marginTop: '8px',  backgroundColor: '#412973'}} ></Avatar> 
+        <Row gutter={[16, 20]} justify = 'center' align={'middle'}>
+          <Menu className = "navbar" style={{backgroundColor: '#EC8C8C'}}
             mode="horizontal" 
             selectedKeys={[location.pathname]}>
           <Menu.Item key="/" className="nav-item" >
@@ -49,6 +50,8 @@ export default function Navbar() {
               </CustomLink>
           </Menu.Item>
           </Menu>
+
+          </Row>
         </Header>
       </Layout>
     );

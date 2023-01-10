@@ -121,7 +121,7 @@ function Dashboard() {
         options={options}
       />
       </Col>
-      <div style={{ width: '100%', height: '80vh' }}>
+      <div style={{ width: '100%', height: '70vh' }}>
       <Column
   {...config}
   xAxis={{
