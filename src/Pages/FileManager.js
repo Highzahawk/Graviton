@@ -29,14 +29,12 @@ function FileManager(){
                 items,
             selectable: true,
             defaultSelectedKeys: ['3'],
-            
-            
             }}
         >
             <Typography.Link>
              <Space>
              Filter
-                <FilterFilled />
+                <FilterFilled style={{ fontSize: '30px' }}/>
                 </Space>
             </Typography.Link>
         </Dropdown>   
