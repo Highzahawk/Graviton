@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import FileManager from './Pages/FileManager';
 import Practice from './Pages/Practice';
 import Dashboard from './Pages/Dashboard';
+import Unit from './Pages/Unit'
 import {Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/FileManager" element={<FileManager />} />
           <Route path="/Practice" element={<Practice />} />
           <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Unit" element={<Unit/>} />
         </Routes>
     </div>
     </>

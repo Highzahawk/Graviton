@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {DownloadOutlined, FilterFilled, SearchOutlined, PlusOutlined, DownOutlined} from '@ant-design/icons'
 import {Button, Layout, Space, Grid, Row, Col, Dropdown, Typography, Menu} from 'antd'
@@ -6,6 +6,10 @@ import styles from "./FileStyles.css";
 
 function FileManager(){
     const navigate = useNavigate();
+    
+    const handleUnitButtonClick = () => {
+        navigate('/Unit');
+      };
 
     const classNames = (
         <Menu>
@@ -36,9 +40,9 @@ function FileManager(){
             </Col>  
 
             <Col span = {12}> 
-                <Button type = "default" className = "Units" size = "large">
+                <Button type = "default" className = "Units" size = "large" onClick={handleUnitButtonClick}>
                 Unit 1
-            </Button>
+                </Button>
             </Col>  
      
         </Row>

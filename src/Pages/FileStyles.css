@@ -12,6 +12,7 @@
 .ant-btn.ant-btn-primary:active {
 background-color: #412973;
 border: solid black;
+
 } 
 
 .ant-btn.Units {
@@ -31,5 +32,4 @@ color:white;
 background-color: #1a6680;
 text-align: center;
 border: solid 4px#34CBFF;
-animation-delay: 1s;
 }
