@@ -15,19 +15,21 @@ border: solid black;
 } 
 
 .ant-btn.Units {
-padding: 100px;
+
 background-color: #1a6680;
-font-size: x-large;
 text-align: center;
 color:white;
+font-size: x-large;
 border:solid 4px black;
+width: 250px;
+height: 200px;
 
 }
 
 .ant-btn.Units:hover {
-padding: 100px;
 color:white;
 background-color: #1a6680;
 text-align: center;
 border: solid 4px#34CBFF;
+animation-delay: 1s;
 }
