@@ -13,31 +13,14 @@ function FileManager(){
                 AP Calculus AB
             </Menu.Item>
             <Menu.Item key="1">
-                AP Caclulus BC
-            </Menu.Item>
-        </Menu>
-    );
-
-    const sectionNumber = (
-        <Menu>
-            <Menu.Item key="0">
-                All Sections 
-            </Menu.Item>
-            <Menu.Item key="1">
-                Section 001 
-            </Menu.Item>
-            <Menu.Item key="2">
-                Section 002
-            </Menu.Item>
-            <Menu.Item key="3">
-                Section 003
+                AP Language
             </Menu.Item>
         </Menu>
     );
 
     return(
         <Row gutter={[16, 40]}>
-           <Col span = {8}>
+           <Col span = {12}>
                 <Dropdown overlay={classNames} trigger={['hover']}>
                     <Button type="primary" className = "ClassFilter" shape = "round" size = "large" >
                         Class Filter <DownOutlined />
@@ -45,24 +28,14 @@ function FileManager(){
                 </Dropdown>
             </Col>
 
-            <Col span = {8}>
-                <Dropdown overlay={sectionNumber} trigger={['hover']}>
-                    <Button type="primary" className = "SectionFilter" shape = "round" size = "large" >
-                        Sections Filter <DownOutlined />
-                    </Button>
-                </Dropdown>
-            </Col>
-
-            <Col span = {8}>
+            <Col span = {12}>
                 <Button type="primary" className = "Toolbar" shape = "round" size = "large" >
-                    <Space>
                         <SearchOutlined style={{ fontSize: '24px' }} />
-                        <PlusOutlined style={{ fontSize: '24px' }}/>
-                    </Space>
+    
                 </Button>
             </Col>  
 
-            <Col span = {8}> 
+            <Col span = {12}> 
                 <Button type = "default" className = "Units" size = "large">
                 Unit 1
             </Button>
