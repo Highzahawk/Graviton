@@ -21,12 +21,7 @@ border: solid black;
 }
 
 
-.ant-btn.ant-btn.FileName:hover {
-  background-color: #1A6680;
-  border: solid #2591b5;
-} 
-
-.ant-btn.Units {
+.ant-btn.Quizzes {
 
   background-color: #1a6680;
   text-align: center;
@@ -38,10 +33,31 @@ border: solid black;
   
   }
   
-  .ant-btn.Units:hover {
+  .ant-btn.Quizzes:hover {
   color:white;
   background-color: #1a6680;
   text-align: center;
   border: solid 4px#34CBFF;
   }
 
+  .PracticeQuizzes {
+    position: relative;
+}
+
+.QuizzesOptions {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.PracticeQuizzes:hover .QuizzesOptions {
+    display: block;
+}
+
+.QuizOptions {
+  background-color: #1A6680;
+  border-color: #1A6680;
+  color: white;
+}

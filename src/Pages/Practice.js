@@ -7,9 +7,23 @@ import styles from "./PracticeStyles.css";
 function Practice(){
     const navigate = useNavigate();
     
-    const handleUnitButtonClick = () => {
+    const quizzes = () => {
         navigate('/QuizHome');
       };
+
+    const newQuiz = () => {
+        navigate('/CreateQuiz');
+      };
+
+
+    const Flashcard = () => {
+        navigate('/FlashcardHome');
+      };
+
+    const newFlashcard = () => {
+        navigate('/CreateFlashcard');
+      };
+
 
     const classNames = (
         <Menu>
@@ -39,12 +53,38 @@ function Practice(){
                 </Button>
             </Col>  
 
-            <Col span = {12}> 
-                <Button type = "default" className = "Units" size = "large" onClick={handleUnitButtonClick}>
-                Unit 1
+            <Col span = {12} className="PracticeQuizzes">
+            <Button type = "default" className = "Quizzes" size = "large">
+                Practice Quizzes
+            </Button>
+
+            <Col span={12} className="QuizzesOptions">
+                <Button type = "default" size = "small" className = "QuizOptions" onClick={quizzes}>
+                    View Quizzes
                 </Button>
-            </Col>  
-     
+                <Button type = "default" size = "small" className = "QuizOptions" onClick={newQuiz}>
+                    Create New Quiz
+                </Button>
+            </Col>
+            </Col>
+
+
+            <Col span = {12} className="PracticeQuizzes">
+            <Button type = "default" className = "Quizzes" size = "large">
+                Flashcards
+            </Button>
+
+            <Col span={12} className="QuizzesOptions">
+                <Button type = "default" size = "small" className = "QuizOptions" onClick={Flashcard}>
+                    View All Sets
+                </Button>
+                <Button type = "default" size = "small" className = "QuizOptions" onClick={newFlashcard}>
+                    Create New Set
+                </Button>
+            </Col>
+            </Col>
+            
+
         </Row>
     );
 }

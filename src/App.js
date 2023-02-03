@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import FileManager from './Pages/FileManager';
 import Practice from './Pages/Practice';
 import Dashboard from './Pages/Dashboard';
+import QuizHome from './Pages/QuizHome';
+import FlashcardHome from './Pages/FlashcardHome';
 import {Routes, Route, Link, useLocation} from 'react-router-dom';
 import Navbar from './Navbar';
 import React, { useState } from 'react'
@@ -23,6 +25,8 @@ function App() {
           <Route path="/FileManager" element={<FileManager />} />
           <Route path="/Practice" element={<Practice />} />
           <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/QuizHome" element={<QuizHome/>} />
+          <Route path="/FlashcardHome" element={<FlashcardHome/>} />
         </Routes>
     </div>
     </>
