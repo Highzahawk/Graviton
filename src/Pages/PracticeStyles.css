@@ -26,6 +26,22 @@ border: solid black;
   border: solid #2591b5;
 } 
 
+.ant-btn.Units {
 
-
+  background-color: #1a6680;
+  text-align: center;
+  color:white;
+  font-size: x-large;
+  border:solid 4px black;
+  width: 250px;
+  height: 200px;
+  
+  }
+  
+  .ant-btn.Units:hover {
+  color:white;
+  background-color: #1a6680;
+  text-align: center;
+  border: solid 4px#34CBFF;
+  }
 

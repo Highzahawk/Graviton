@@ -8,7 +8,7 @@ function Practice(){
     const navigate = useNavigate();
     
     const handleUnitButtonClick = () => {
-        navigate('/Unit');
+        navigate('/QuizHome');
       };
 
     const classNames = (
