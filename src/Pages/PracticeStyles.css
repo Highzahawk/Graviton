@@ -1,0 +1,31 @@
+.ant-btn-primary {
+  background-color: #412973;
+  border:solid black;
+}
+
+
+.ant-btn.ant-btn-primary:hover {
+  background-color: #412973;
+  border: solid #a584ec;
+} 
+
+.ant-btn.ant-btn-primary:active {
+background-color: #412973;
+border: solid black;
+
+} 
+
+.ant-btn.FileName {
+  background-color: #1A6680;
+  border:solid black;
+}
+
+
+.ant-btn.ant-btn.FileName:hover {
+  background-color: #1A6680;
+  border: solid #2591b5;
+} 
+
+
+
+
