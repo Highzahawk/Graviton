@@ -27,14 +27,5 @@ border: solid black;
 } 
 
 
-.ant-btn.FileToolbar {
-  background-color: #412973;
-  border:solid black;
-}
 
-
-.ant-btn.ant-btn.FileToolbar:hover {
-  background-color: #412973;
-  border: solid #a584ec;
-} 
 
