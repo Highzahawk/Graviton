@@ -1,14 +1,41 @@
-import react from 'react';
+import React, { useState } from 'react';
+import { Card, Typography } from 'antd';
 
-function FlashcardHome(){
+const { Text } = Typography;
 
-    return(
-        <div>
-            <h>
-                All sets
-            </h>
-        </div>
-    );
-}
+const Flashcard = ({ question, answer, type }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
 
-export default FlashcardHome;
+  return (
+    <Card
+      onClick={() => setIsFlipped(!isFlipped)}
+      style={{ width: 600, height: 400, margin: '20px auto', backgroundColor: 'gray'}}
+    >
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100%',
+        }}
+      >
+        {isFlipped ? (
+          <Text strong>{answer}</Text>
+        ) : (
+          <>
+            <Text strong>{question}</Text>
+          </>
+        )}
+      </div>
+    </Card>
+  );
+};
+
+const FlashcardContainer = () => (
+  <>
+    <Flashcard question="What is the capital of France?" answer="Paris" type="text" />
+  </>
+);
+
+export default FlashcardContainer;

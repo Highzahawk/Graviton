@@ -8,6 +8,7 @@ import Practice from './Pages/Practice';
 import Dashboard from './Pages/Dashboard';
 import QuizHome from './Pages/QuizHome';
 import FlashcardHome from './Pages/FlashcardHome';
+import CreateFlashcard from './Pages/CreateFlashcard';
 import {Routes, Route, Link, useLocation} from 'react-router-dom';
 import Navbar from './Navbar';
 import React, { useState } from 'react'
@@ -27,6 +28,7 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/QuizHome" element={<QuizHome/>} />
           <Route path="/FlashcardHome" element={<FlashcardHome/>} />
+          <Route path="/CreateFlashcard" element={<CreateFlashcard/>} />
         </Routes>
     </div>
     </>
