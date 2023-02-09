@@ -45,8 +45,7 @@ const CreateFlashcard = ({ onAddFlashcard }) => {
       </Form.Item>
       <Form.Item>
         <Radio.Group value={formData.type} onChange={handleChange} name="type">
-          <Radio value="text">Text</Radio>
-          <Radio value="image">Image</Radio>
+          <Radio value="image">Add Image?</Radio>
         </Radio.Group>
       </Form.Item>
       <Form.Item>
